@@ -1,0 +1,47 @@
+.container {
+    padding: 1rem; 
+    margin: auto;
+    max-width: 1200px;
+}
+
+.title {
+    display: flex;
+    justify-content: center; 
+    margin: 1.25rem 0; 
+    font-size: 2rem; 
+}
+
+.button-toggle-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.button-group {
+    display: flex;
+    margin-bottom: 2.5rem; 
+    gap: 2.5rem; 
+}
+
+.recipe-grid {
+    margin-left: 2.5rem; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem; 
+}
+
+@media (min-width: 640px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .recipe-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+.not-found {
+    text-align: center; 
+}

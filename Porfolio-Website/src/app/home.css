@@ -1,0 +1,153 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    padding: 150px 50px;
+    justify-items: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .hero-text p {
+    max-width: 600px;
+  }
+  
+  .hero-image {
+    width: auto;
+    height: 600px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .hero-text h1 {
+      font-size: 4rem;
+    }
+    .hero-image {
+        width: auto;
+        height: 400px;
+      }
+  }
+  
+  .feature-projects-section {
+    margin: 40px 0;
+  }
+  
+  .why-choose-me-section {
+    background-color: #1a1b1e;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .why-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .why-choose-me-section h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .why-choose-me-section p {
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .service-card {
+    background-color: #2a2b2e;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .service-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .service-cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .stack-carousel-section {
+    padding: 40px 20px;
+  }
+  
+  .plans-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .plans-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .plans-section p {
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .plan-card {
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 768px) {
+    .plans {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .plans {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .faqs-section {
+    padding: 60px 20px;
+  }
+  
+  .faqs-image {
+    text-align: center;
+  }
+  

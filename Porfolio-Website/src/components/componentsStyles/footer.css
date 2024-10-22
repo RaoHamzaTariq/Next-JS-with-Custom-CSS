@@ -1,0 +1,67 @@
+/* Footer.css */
+
+.footer {
+    width: 100vw;
+    border-top: 1px solid #e5e7eb; /* Tailwind's border-t-gray-200 */
+  }
+  
+  .footer-container {
+    padding: 5rem 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .logo {
+    padding-bottom: 1.25rem;
+  }
+  
+  .footer-title {
+    font-weight: bold;
+  }
+  
+  .footer-subtitle {
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    max-width: 28rem; /* Approximation of Tailwind's max-w-lg */
+  }
+  
+  .subscribe-container {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+  }
+  
+  .services-section,
+  .all-access-section,
+  .information-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-top: 2rem;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 2.5rem;
+    border-top: 1px solid #d1d5db; /* Tailwind's border-t-gray-300 */
+  }
+  
+  .footer-credit {
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.25rem; /* Tailwind's text-xl */
+  }
+  
+  .text-destructive {
+    color: #f87171; /* Tailwind's text-destructive */
+  }
+  
