@@ -14,11 +14,11 @@ import {
 import Image from "next/image";
 import myImage from "../../public/images/Rao Hamza Tariq.png" 
 import React, { Component } from 'react';
+import "@/components/componentsStyles/navbar.css"
 
 import Link from "next/link"
  
 import { cn } from "../lib/utils"
-// import { Icons } from "./components/icons"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -29,8 +29,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Sheet,
   SheetClose,
@@ -42,50 +40,23 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Card } from "./ui/card";
- 
-export const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Data Analyst",
-    href: "/",
-    description:
-      "Data analysts gather, cleanse, analyze historical data, and uncover business insights.",
-  },
-  {
-    title: "Data Science",
-    href: "/",
-    description:
-      "Study of data to extract meaningful insights for business.",
-  },
-  {
-    title: "Web Development",
-    href: "/",
-    description: "Process of creating websites or web applications, including the project's design, layout, coding, content creation, and functionality.",
-  },
-  {
-    title: "All",
-    href: "/",
-    description:
-      "All the projects i have created ever in different field using various tools",
-  },
-]
-
 
 
 const Navbar = () => {
   return (
-    <Card className='m-0 z-10 p-0 fixed w-screen border-none rounded-none bg-transparent backdrop-blur-lg'>
-    <div className="shadow-sm py-3">
-    <div className='block sm:hidden  ml-5'>
+    <Card className='navbar'>
+    <div className="shadow-navbar">
+    <div className='mobile-navbar'>
 
-<div className="flex justify-between items-center">
+<div className="divi">
 <h3 className="">BI Structure</h3>
-<div className="mr-5">
+<div className="sheet-div">
     <Sheet>
 <SheetTrigger asChild>
   <Button variant="outline" className="p-2"><IoMenuSharp/></Button>
 </SheetTrigger>
 <SheetContent>
-  <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">BI Structure</h1>
+  <h1 className="logo-mobile">BI Structure</h1>
   <Command> 
 <CommandList>
 <CommandGroup className="mt-5">
@@ -108,8 +79,8 @@ const Navbar = () => {
 
     <div className='hidden sm:block mr-28 '>
 
-<div className=' flex justify-between items-center'>
-<h1 className="scroll-m-20 text-xl font-semibold tracking-tight flex ml-5">BI Structure</h1>
+<div className='divi'>
+<h1 className="logo-mobile">BI Structure</h1>
 
 <NavigationMenu>
 <NavigationMenuList>
@@ -119,58 +90,6 @@ const Navbar = () => {
         Home
       </NavigationMenuLink>
     </Link>
-  </NavigationMenuItem>
-  <NavigationMenuItem>
-    <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-    <NavigationMenuContent>
-      <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-        <li className="row-span-3">
-          <NavigationMenuLink asChild>
-            <a
-              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-              href="/"
-            >
-              {/* <Icons.logo className="h-6 w-6" /> */}
-              <Image
-                      src={myImage}
-                      height={250}
-                      width={250} alt={""} />
-              <div className="mb-2 mt-4 text-lg font-medium">
-                Rao Hamza Tariq
-              </div>
-              <p className="text-sm leading-tight text-muted-foreground">
-                Data Analyst | Junior Data Scientist | Full Stack Web Developer
-              </p>
-            </a>
-          </NavigationMenuLink>
-        </li>
-          <ListItem href="/docs" title="Data Analyst">
-             Transforming your data into useful insights using Python, Power BI and SQL.
-          </ListItem>
-          <ListItem href="/docs/installation" title="Data Scientist">
-              Make your own predictive model using Machine Learning.
-          </ListItem>
-          <ListItem href="/docs/primitives/typography" title="Web Developer">
-              Build your modern website using Next JS, Tailwind CSS and Shadcn UI.
-          </ListItem>
-      </ul>
-    </NavigationMenuContent>
-  </NavigationMenuItem>
-  <NavigationMenuItem>
-    <NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
-    <NavigationMenuContent>
-      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-        {components.map((component) => (
-          <Link href={`/Portfolio/${component.title.replace(/\s+/g,"")}`} key={component.title}>
-          <ListItem
-            title={component.title}
-          >
-            {component.description}
-          </ListItem>
-          </Link>
-        ))}
-      </ul>
-    </NavigationMenuContent>
   </NavigationMenuItem>
   <NavigationMenuItem>
     <Link href="/Contact" legacyBehavior passHref>
