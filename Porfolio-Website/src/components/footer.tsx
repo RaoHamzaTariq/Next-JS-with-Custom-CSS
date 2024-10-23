@@ -1,5 +1,4 @@
 import React from 'react';
-import { components } from './Navbar';
 import Link from 'next/link';
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { Input } from './ui/input';
