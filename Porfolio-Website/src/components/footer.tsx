@@ -14,7 +14,7 @@ const Footer = () => {
             <div className='logo'>
               <h2>LOGO</h2>
             </div>
-            <div className='flex flex-col gap-2 justify-center '>
+            <div className='footer-upper '>
               <p className='footer-title'>{`Get 15% off your first order!`}</p>
               <p className='footer-subtitle'>{`Sign up to our mailing list below to get 15% off your first order. Don't worry, we hate spam too.`}</p>
             </div>
@@ -23,10 +23,10 @@ const Footer = () => {
               <Button variant={"default"}>Subscribe</Button>
             </div>
           </div>
-          <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly gap-10 px-10 pt-10'> 
+          <div className='grid-container'> 
             <div className='services-section'>
               <h4>Services</h4>
-              <ul className='flex flex-col gap-5 pt-8'>
+              <ul className='services-section-list'>
                 <Link href={'/services/'}><li>Data Analysis</li></Link>
                 <Link href={'/services/'}><li>Data Science</li></Link>
                 <Link href={'/services/'}><li>Web Development</li></Link>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className='all-access-section'>
               <h4>All-Access Pass</h4>
-              <ul className='flex flex-col gap-5 pt-8'>
+              <ul className='all-access-section-list'>
                 <li>Sign Up</li>
                 <li>Login In</li>
                 <li>Reset Password</li>
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className='information-section'>
               <h4>Information</h4>
-              <ul className='flex flex-col gap-5 pt-8'>
+              <ul className='information-section-list'>
                 <li>FAQs</li>
                 <Link href={"/Contact/"}><li>Contact Us</li></Link>
                 <li>Privacy Policy</li>

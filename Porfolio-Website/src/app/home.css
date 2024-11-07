@@ -145,6 +145,10 @@ body, html {
   
   .faqs-section {
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .faqs-image {
