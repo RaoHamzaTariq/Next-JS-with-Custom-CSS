@@ -1,8 +1,8 @@
 /* Main Container */
 .main-container {
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: column; 
+    box-sizing: border-box;
   }
   
   /* About Section */
@@ -12,9 +12,14 @@
     gap: 80px;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
+    padding: 40px;
     overflow-x: hidden;
-    height: 100vh;
+  }
+
+  .containers{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
   
   .about-content {
@@ -37,14 +42,11 @@
   
   /* Values Section */
   .values-section {
-    width: 100vw;
     padding: 48px 0;
     background-color: #f3f4f6;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .containers {
     padding: 0 24px;
   }
   
@@ -93,7 +95,7 @@
   
   /* Achievements Section */
   .achievements-section {
-    width: 100vw;
+    width: 100%;
     padding: 48px 0;
   }
   
@@ -139,8 +141,32 @@
     text-align: center;
     color: #6b7280;
   }
+
+
+
   
   /* Media Queries for Responsiveness */
+
+
+  @media (max-width: 400px) {
+    .about-section{
+      padding: 10px;
+      margin: 100px 0 0 0;
+  
+    }
+
+    .values-section
+
+    .containers{
+      padding: 10px;
+    }
+    .values-intro p{
+      width: 300px;
+    }
+  }
+
+
+
   @media (min-width: 768px) {
     .about-section {
       grid-template-columns: 1fr 1fr;
@@ -166,7 +192,5 @@
       font-size: 5rem;
     }
   }
+
   
-  @media (max) {
-    
-  }

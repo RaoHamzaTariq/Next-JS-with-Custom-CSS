@@ -18,7 +18,7 @@ export default function About() {
   </section>
 
   <section className="values-section">
-    <div className="container">
+    <div className="containers">
       <div className="values-intro">
         <h2>Our Values</h2>
         <p>We uphold a set of core values that guide our work and shape our culture.</p>
@@ -44,7 +44,7 @@ export default function About() {
   </section>
 
   <section className="achievements-section">
-    <div className="container">
+    <div className="containers">
       <div className="achievements-intro">
         <h2>Our Achievements</h2>
         <p>We are proud of the milestones we have reached and the impact we have made on our clients and the industry.</p>
